@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hiermee zet ik een mooi lettertype op de website -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Hier staat alle CSS in die ik gebruik om de website mooi te maken -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <!-- Hier staat de titel van de pagina en een korte introductie -->
+            <h1>Programmeren met Pals</h1>
+            <h2>Bouw je eigen website</h2>
+            <p>Op deze website leer je programmeren met Pals. Aan het eind van deze lessenserie kun je zelf een gave website bouwen.</p>
+            
+            <!-- Hier staan wat linkjes waarmee je kunt scrollen naar de juiste plek op de website -->
+            <ul>
+                <li><a href="#les1">Les 1: Hoe zet je een HTML-pagina op?</a></li>
+                <li><a href="#les2">Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</a></li>
+                <li><a href="#les3">Les 3: Plaatjes, linkjes</a></li>
+                <li><a href="#les4">Les 4: Flexbox</a></li>
+            </ul>
+
+            <div id="les1">
+                <h2>Les 1: Hoe zet je een HTML-pagina op?</h2>
+                <h3>Programmeertalen</h3>
+                <p>
+                    Je kunt een website maken met de volgende programmeertalen:
+                    <ol>
+                        <li><b>HTML</b> = Hyper Text Markup Language -> hiermee kun je structuur aan je website geven</li>
+                        <li><b>CSS</b> = Cascading Style Sheets -> hiermee kun je de website stylen. Bijvoorbeeld mooie kleuren geven</li>
+                        <li><b>JavaScript</b> = hiermee kun je de website dynamisch maken. Als je een game wilt maken bijvoorbeeld, dan kun je daarvoor JavaScript gebruiken</li>
+                    </ol>
+                </p>
+                <h3>Een HTML-bestand</h3>
+                <p>
+                    We beginnen met HTML. Dat is de basis. Hieronder zie je een voorbeeld van een HTML-pagina:
+                    <img src="voorbeeld1.png" width="800" alt="Voorbeeld hoe je een HTML-pagina kunt maken">
+                    <div class="letop">
+                        Let op: zorg dat je iedere tag netjes afsluit. Dus &lt;html&gt;&lt;/html&gt;. 
+                    </div>
+                </p>
+                <h3>Maak je eigen HTML-bestand</h3>
+                <p>
+                    Je kunt heel eenvoudig een eigen HTML-bestand maken. Dit kun je doen door Notepad++ te openen. Hierin kun je HTML typen en deze vervolgens opslaan. 
+                    <div class="letop">
+                        Let op: zorg dat je het bestand opslaat als HTML-bestand.  
+                    </div>
+                </p>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 1</b>: Maak een HTML-bestand in Notepad++ en sla deze op als een .html-bestand. Zorg dat je deze wel opslaat op een logische
+                        plaats op je computer. Documenten is een goede plek. 
+                    </p>
+                    <p>
+                        Zorg vervolgens dat je een standaard HTML-pagina maakt zoals in het voorbeeld hierboven. Sla dit vervolgens op. 
+                    </p>
+                </div>
+                <h3>Tekst toevoegen op je website</h3>
+                <p>
+                    Nu wil je natuurlijk teksten toevoegen op je website. HTML werkt alleen met code. Dus als je een enter doet, dan 
+                    zie je dat niet terug op de website. Hieronder zie je een lijst met tags die je kunt gebruiken:
+                </p>
+                <p>
+                    <h4>1. Koptekst:</h4>
+                    <code>
+                        &lt;h1&gt;Dit is een grote koptekst&lt;/h1&gt;
+                    </code>
+                    <code>
+                        &lt;h2&gt;Dit is een kleinere koptekst&lt;/h2&gt;
+                    </code>
+                    <code>
+                        &lt;h3&gt;Dit is een nog kleinere koptekst&lt;/h3&gt;
+                    </code>
+                </p>
+                <p>
+                    <h4>2. Paragraaf:</h4>
+                    <code>
+                        &lt;p&gt;Hier plaats je grote stukken tekst&lt;/p&gt;
+                    </code>
+                </p>
+                <p>
+                    <h4>3. Bold, Schuin of Lijntje eronder:</h4>
+                    <b>
+                        <code>
+                            &lt;b&gt;Deze tekst wordt dikgedrukt&lt;/b&gt;
+                        </code>
+                    </b>
+                    
+                    <i>
+                        <code>
+                            &lt;i&gt;Deze tekst wordt schuin&lt;/i&gt;
+                        </code>
+                    </i>
+
+                    <u>
+                        <code>
+                            &lt;u&gt;Hier komt een lijntje onder&lt;/u&gt;
+                        </code>
+                    </u>
+                  
+                </p>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 2</b>: Geef je website een mooie titel. Gebruik daarvoor een h1-tag. Maak vervolgens een paragraaf waarin je wat
+                        vertelt over waarom je HTML gebruikt. Maak belangrijke woorden bold. Nog belangrijkere woorden kun je ook een underline geven. 
+                        Als je een eigen website bouwt, zorg er dan in ieder geval voor dat je alle bovengenoemde tags gebruikt. 
+                    </p>
+                </div>
+
+                <h3>Lijstje maken</h3>
+                <p>
+                    Soms is het fijn om een lijstje te maken met daarin een opsomming. Redenen kunnen zijn:
+                </p>
+                <ul>
+                    <li>Reden 1: het is overzichtelijk</li>
+                    <li>Reden 2: er komen mooie bolletjes voor</li>
+                    <li>Reden 3: je kunt eventueel ook het systeem automatisch laten tellen</li>
+                </ul>
+                Hieronder de code die je hiervoor nodig hebt. Je begint altijd met een ul en daarna voor ieder punt een li-tag. 
+                <pre>
+<code>
+    &lt;ul&gt;
+        &lt;li&gt;Punt 1&lt;/li&gt;
+        &lt;li&gt;Punt 2&lt;/li&gt;
+        &lt;li&gt;Punt 3&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+                </pre>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 3</b>: Maak een opsomming met 5 redenen waarvoor programmeren wordt gebruikt. Als je een eigen
+                        website bouwt, mag je een opsomming naar keuze gebruiken. Zorg er in ieder geval voor dat je een ul en li gebruikt.  
+                        Bonus: kun je uitzoeken op welke wijze je een opsomming met getallen kunt maken? 
+                    </p>
+                </div>
+                <div class="einde">
+                    Dit is het einde van les 1. Lever je HTML-bestand in bij les 1. 
+                </div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+            <div id="les2">
+                <h2>Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</h2>
+                <h3>Hoe kun je een tabel maken?</h3>
+                <p>
+                    Een tabel zul je erg vaak gebruiken. Bijvoorbeeld om wat data te tonen en zorgen dat dit er overzichtelijk uitziet. 
+                    Hieronder wat redenen waarom je een tabel zou kunnen gebruiken. 
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reden</th>
+                            <th>Beschrijving</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reden 1</td>
+                            <td>Het is overzichtelijk</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 2</td>
+                            <td>Je kunt data netjes organiseren</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 3</td>
+                            <td>Het is gemakkelijk om data te vergelijken</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 4</td>
+                            <td>Je kunt rijen en kolommen gebruiken om structuur aan te brengen</td>
+                        </tr>
+                    </tbody>
+                </table>
+                Ook voor een tabel geldt dat je hiervoor HTML-code nodig hebt. Je hebt de volgende tags nodig:
+                <ul>
+                    <li><b>table-tag</b>: om aan te geven dat het een tabel is</li>
+                    <li><b>thead-tag</b>: hier kun je de koppen plaatsen</li>
+                    <li><b>tbody-tag</b>: hier komt de data</li>
+                    <li><b>tr-tag</b>: voor iedere rij gebruik je een tr-tag</li>
+                    <li><b>th-tag</b>: deze gebruik je voor de koppen</li>
+                    <li><b>td-tag</b>: deze gebruik je voor iedere cel</li>
+                </ul>
+                Hieronder een voorbeeld in HTML-code:
+                <pre>
+                    <code>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Reden&lt;/th&gt;
+            &lt;th&gt;Beschrijving&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 1&lt;/td&gt;
+            &lt;td&gt;Het is overzichtelijk&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 2&lt;/td&gt;
+            &lt;td&gt;Je kunt data netjes organiseren&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 3&lt;/td&gt;
+            &lt;td&gt;Het is gemakkelijk om data te vergelijken&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 4&lt;/td&gt;
+            &lt;td&gt;Je kunt rijen en kolommen gebruiken om structuur aan te brengen&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </code>
+                </pre>
+
+                <div class="opdracht">
+                   <b>Opdracht 4:</b> Maak een tabel met daarin een lijst waarin je de lessen bij kunt houden. 
+                   Zorg dat je een lesnummer opneemt in een kolom. Er moet ook een kolom komen met datum. In de laatste kolom
+                   wat je hebt geleerd. Als je een eigen website maakt, gebruik dan in ieder geval een tabel met meerdere kolommen en rijen. 
+                </div>
+
+                <h3>Kleuren met CSS</h3>
+                <p>
+                    De website is nu best wel saai. Je hebt een witte achtergrond met zwarte letters. Om de website wat mooier te maken
+                    heb je CSS nodig. 
+                    <img src="voorbeeld2.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                    Hiervoor heb je een style-tag nodig. Deze kun je plaatsen tussen je head-tag zoals in bovenstaand voorbeeld.
+                </p>
+                <h3>Een mooie achtergrond</h3>
+                <p>
+                    Nu willen we een mooie achtergrond maken. Het eerste wat je moet doen is duidelijk aangeven in de style-tag welk element je 
+                    wilt stylen. In dit geval kiezen we de body-tag omdat de gehele website daarin staat. Vervolgens zet je tussen { } 
+                    de styling die je wilt doorvoeren. Als we de achtergrond willen veranderen, kunnen we daarvoor background-color gebruiken
+                    of voor een plaatje background-image. Sluit iedere regel af met een ;. Hieronder twee voorbeelden:
+                </p>
+                <img src="voorbeeld3.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                <div class="opdracht">
+                    <b>Opdracht 5:</b> Geef je website een mooie achtergrondkleur of afbeelding 
+                 </div>
+                 <h3>Geef je tekst een mooie kleur</h3>
+                 <p>
+                    Het is ook goed mogelijk om teksten een kleur te geven. Ook hiervoor kun je CSS gebruiken. Dit kun je doen door de tag te 
+                    benoemen die je een kleur wilt geven en vervolgens een regel met color: toe te voegen. Hieronder een voorbeeld waarbij 
+                    de h1-tag blauw wordt gemaakt en de h2-tag groen. 
+                 </p>
+                 <img src="voorbeeld4.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                 <div class="opdracht">
+                    <b>Opdracht 6:</b> Geef je titel een mooie tekstkleur. Zorg ook dat alle tekst in de p-tag een mooie kleur krijgt. 
+                 </div> <br />
+                 <div class="einde">
+                    Lever je HTML-bestand in bij les 2 in Digitvo. 
+                 </div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+            <div id="les3">
+                <h2>Les 3: Plaatjes, linkjes en divs</h2>
+                <h3>Plaatjes toevoegen</h3>
+                <p>
+                    Laten we de website wat mooier maken door een plaatje toe te voegen. Dit kan heel eenvoudig door de img-tag te gebruiken. 
+                    Zorg dat je het plaatje op dezelfde plek hebt staan als je .html-bestand. In de src="" zet je de naam van het plaatje + extensie (.jpg bijvoorbeeld) 
+                </p>
+                <div class="letop">De img-tag is een beetje vreemd want je hoeft hem niet af te sluiten. Er is dus geen einde voor de img-tag</div>
+                <code>&lt;img src=&quot;plaatje.jpg&quot;&gt;</code>
+                <div class="opdracht">
+                    Opdracht 7: Voeg nu zelf een plaatje toe aan je website. Zoek deze op via Google en plaats het in je HTML-pagina. 
+                </div>
+                <h3>Link toevoegen</h3>
+                <p>
+                    Het is ook mogelijk om een link naar een andere website te maken. Dit kan heel eenvoudig door het gebruik van een a-tag. 
+                    Hieronder een voorbeeld van een link + de code. In de href="" plaats je de link. En tussen de a-tag plaats je de tekst die
+                    je wilt geven aan de link. 
+                </p>
+                <a href="https://lodenstein.enverio.nl">Klik hier</a>
+                <code>
+                    &lt;a href=&quot;https://lodenstein.enverio.nl&quot;&gt;Klik hier&lt;/a&gt;
+                </code>
+                <div class="opdracht">
+                    Opdracht 8: Voeg een link toe aan jouw eigen website en zorg ervoor dat deze link werkt als je erop klikt. 
+                </div>
+                <h3>Een div</h3>
+                <p>
+                    Tot nu toe heb je alles onder elkaar gezet. Ik kan mij voorstellen dat het ook handig is om dingen naast
+                    elkaar te zetten. Daarvoor heb je weer CSS nodig. De techniek die je daarvoor kunt gebruiken is flexbox. 
+                    Het eerste wat je nodig hebt is het gebruik van een div. Een div is een tag die in principe niets doet tot 
+                    je er CSS aan toevoegt. Alleen moet je er dan wel voor zorgen dat CSS weet welke div aangepast dient te worden. Dit kan 
+                    door de div een naam te geven. Dit noemen we een id. Hieronder een voorbeeld van een div met een id. 
+                </p>
+                <code>&lt;div id=&quot;naamvandediv&quot;&gt;Wat tekst in de div&lt;/div&gt;</code>
+                <p>
+                    Nu zouden we de tekst in de div een aparte kleur kunnen geven. Omdat de div een id heeft, kunnen we in CSS heel makkelijk deze 
+                    div apart aanpassen. Dit kun je doen door een # te gebruiken en dan de naam van de div. 
+                </p>
+                <div class="letop">Let op: de id van een div moet uniek zijn. Je mag dus niet twee keer dezelfde id gebruiken. </div>
+                <img src="voorbeeld5.png" width="500" alt="Kleuren van een div">
+                <div style="color:green;">Wat tekst in de div</div>
+                <div class="opdracht">
+                    Opdracht 9: Maak in jouw website een div. Bedenk een goede naam voor deze div. En geef de div de kleur rood met CSS. 
+                    Beschrijf daarin wat je moeilijk vindt in het werken met CSS en HTML. Als je een eigen website maakt, zorg er dan in ieder
+                    geval voor dat je een div met een id hebt en een aparte kleur. 
+                </div>
+                <h3>Meerdere divs tegelijk stylen</h3>
+                <p>
+                    Het kan ook zijn dat je meerdere divs tegelijk wilt stylen. Bijvoorbeeld een kleur geven. In het vorige voorbeeld zag je 
+                    dat we een id gebruikten. Nadeel van een id is dat je deze maar 1 keer kunt gebruiken. Iedere div met een id moet een unieke
+                    naam hebben. Hiervoor hebben ze wat anders uitgevonden: een class. Door het class-attribuut te gebruiken in plaats van een 
+                    id kun je meerdere divs dezelfde naam geven en stylen met CSS. 
+                </p>
+                <img src="voorbeeld6.png" width="500" alt="De CSS om te stylen">
+                <code>
+                    <pre>
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div1&lt;/div&gt;
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div2&lt;/div&gt;
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div3&lt;/div&gt;
+                    </pre>
+                </code>
+                <div class="opdracht">
+                    Opdracht 10: Maak nu 3 divs in jouw website. Geef deze een class. En zorg dat deze blauw zijn. Maak vervolgens nog 2 divs.
+                    Geef deze ook een classnaam en een rode kleur. 
+                </div>
+               <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hiermee zet ik een mooi lettertype op de website -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Hier staat alle CSS in die ik gebruik om de website mooi te maken -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <!-- Hier staat de titel van de pagina en een korte introductie -->
+            <h1>Programmeren met Pals</h1>
+            <h2>Bouw je eigen website</h2>
+            <p>Op deze website leer je programmeren met Pals. Aan het eind van deze lessenserie kun je zelf een gave website bouwen.</p>
+            
+            <!-- Hier staan wat linkjes waarmee je kunt scrollen naar de juiste plek op de website -->
+            <ul>
+                <li><a href="#les1">Les 1: Hoe zet je een HTML-pagina op?</a></li>
+                <li><a href="#les2">Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</a></li>
+                <li><a href="#les3">Les 3: Plaatjes, linkjes</a></li>
+                <li><a href="#les4">Les 4: Flexbox</a></li>
+            </ul>
+
+            <div id="les1">
+                <h2>Les 1: Hoe zet je een HTML-pagina op?</h2>
+                <h3>Programmeertalen</h3>
+                <p>
+                    Je kunt een website maken met de volgende programmeertalen:
+                    <ol>
+                        <li><b>HTML</b> = Hyper Text Markup Language -> hiermee kun je structuur aan je website geven</li>
+                        <li><b>CSS</b> = Cascading Style Sheets -> hiermee kun je de website stylen. Bijvoorbeeld mooie kleuren geven</li>
+                        <li><b>JavaScript</b> = hiermee kun je de website dynamisch maken. Als je een game wilt maken bijvoorbeeld, dan kun je daarvoor JavaScript gebruiken</li>
+                    </ol>
+                </p>
+                <h3>Een HTML-bestand</h3>
+                <p>
+                    We beginnen met HTML. Dat is de basis. Hieronder zie je een voorbeeld van een HTML-pagina:
+                    <img src="voorbeeld1.png" width="800" alt="Voorbeeld hoe je een HTML-pagina kunt maken">
+                    <div class="letop">
+                        Let op: zorg dat je iedere tag netjes afsluit. Dus &lt;html&gt;&lt;/html&gt;. 
+                    </div>
+                </p>
+                <h3>Maak je eigen HTML-bestand</h3>
+                <p>
+                    Je kunt heel eenvoudig een eigen HTML-bestand maken. Dit kun je doen door Notepad++ te openen. Hierin kun je HTML typen en deze vervolgens opslaan. 
+                    <div class="letop">
+                        Let op: zorg dat je het bestand opslaat als HTML-bestand.  
+                    </div>
+                </p>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 1</b>: Maak een HTML-bestand in Notepad++ en sla deze op als een .html-bestand. Zorg dat je deze wel opslaat op een logische
+                        plaats op je computer. Documenten is een goede plek. 
+                    </p>
+                    <p>
+                        Zorg vervolgens dat je een standaard HTML-pagina maakt zoals in het voorbeeld hierboven. Sla dit vervolgens op. 
+                    </p>
+                </div>
+                <h3>Tekst toevoegen op je website</h3>
+                <p>
+                    Nu wil je natuurlijk teksten toevoegen op je website. HTML werkt alleen met code. Dus als je een enter doet, dan 
+                    zie je dat niet terug op de website. Hieronder zie je een lijst met tags die je kunt gebruiken:
+                </p>
+                <p>
+                    <h4>1. Koptekst:</h4>
+                    <code>
+                        &lt;h1&gt;Dit is een grote koptekst&lt;/h1&gt;
+                    </code>
+                    <code>
+                        &lt;h2&gt;Dit is een kleinere koptekst&lt;/h2&gt;
+                    </code>
+                    <code>
+                        &lt;h3&gt;Dit is een nog kleinere koptekst&lt;/h3&gt;
+                    </code>
+                </p>
+                <p>
+                    <h4>2. Paragraaf:</h4>
+                    <code>
+                        &lt;p&gt;Hier plaats je grote stukken tekst&lt;/p&gt;
+                    </code>
+                </p>
+                <p>
+                    <h4>3. Bold, Schuin of Lijntje eronder:</h4>
+                    <b>
+                        <code>
+                            &lt;b&gt;Deze tekst wordt dikgedrukt&lt;/b&gt;
+                        </code>
+                    </b>
+                    
+                    <i>
+                        <code>
+                            &lt;i&gt;Deze tekst wordt schuin&lt;/i&gt;
+                        </code>
+                    </i>
+
+                    <u>
+                        <code>
+                            &lt;u&gt;Hier komt een lijntje onder&lt;/u&gt;
+                        </code>
+                    </u>
+                  
+                </p>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 2</b>: Geef je website een mooie titel. Gebruik daarvoor een h1-tag. Maak vervolgens een paragraaf waarin je wat
+                        vertelt over waarom je HTML gebruikt. Maak belangrijke woorden bold. Nog belangrijkere woorden kun je ook een underline geven. 
+                        Als je een eigen website bouwt, zorg er dan in ieder geval voor dat je alle bovengenoemde tags gebruikt. 
+                    </p>
+                </div>
+
+                <h3>Lijstje maken</h3>
+                <p>
+                    Soms is het fijn om een lijstje te maken met daarin een opsomming. Redenen kunnen zijn:
+                </p>
+                <ul>
+                    <li>Reden 1: het is overzichtelijk</li>
+                    <li>Reden 2: er komen mooie bolletjes voor</li>
+                    <li>Reden 3: je kunt eventueel ook het systeem automatisch laten tellen</li>
+                </ul>
+                Hieronder de code die je hiervoor nodig hebt. Je begint altijd met een ul en daarna voor ieder punt een li-tag. 
+                <pre>
+<code>
+    &lt;ul&gt;
+        &lt;li&gt;Punt 1&lt;/li&gt;
+        &lt;li&gt;Punt 2&lt;/li&gt;
+        &lt;li&gt;Punt 3&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+                </pre>
+                <div class="opdracht">
+                    <p>
+                        <b>Opdracht 3</b>: Maak een opsomming met 5 redenen waarvoor programmeren wordt gebruikt. Als je een eigen
+                        website bouwt, mag je een opsomming naar keuze gebruiken. Zorg er in ieder geval voor dat je een ul en li gebruikt.  
+                        Bonus: kun je uitzoeken op welke wijze je een opsomming met getallen kunt maken? 
+                    </p>
+                </div>
+                <div class="einde">
+                    Dit is het einde van les 1. Lever je HTML-bestand in bij les 1. 
+                </div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+            <div id="les2">
+                <h2>Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</h2>
+                <h3>Hoe kun je een tabel maken?</h3>
+                <p>
+                    Een tabel zul je erg vaak gebruiken. Bijvoorbeeld om wat data te tonen en zorgen dat dit er overzichtelijk uitziet. 
+                    Hieronder wat redenen waarom je een tabel zou kunnen gebruiken. 
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reden</th>
+                            <th>Beschrijving</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reden 1</td>
+                            <td>Het is overzichtelijk</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 2</td>
+                            <td>Je kunt data netjes organiseren</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 3</td>
+                            <td>Het is gemakkelijk om data te vergelijken</td>
+                        </tr>
+                        <tr>
+                            <td>Reden 4</td>
+                            <td>Je kunt rijen en kolommen gebruiken om structuur aan te brengen</td>
+                        </tr>
+                    </tbody>
+                </table>
+                Ook voor een tabel geldt dat je hiervoor HTML-code nodig hebt. Je hebt de volgende tags nodig:
+                <ul>
+                    <li><b>table-tag</b>: om aan te geven dat het een tabel is</li>
+                    <li><b>thead-tag</b>: hier kun je de koppen plaatsen</li>
+                    <li><b>tbody-tag</b>: hier komt de data</li>
+                    <li><b>tr-tag</b>: voor iedere rij gebruik je een tr-tag</li>
+                    <li><b>th-tag</b>: deze gebruik je voor de koppen</li>
+                    <li><b>td-tag</b>: deze gebruik je voor iedere cel</li>
+                </ul>
+                Hieronder een voorbeeld in HTML-code:
+                <pre>
+                    <code>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Reden&lt;/th&gt;
+            &lt;th&gt;Beschrijving&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 1&lt;/td&gt;
+            &lt;td&gt;Het is overzichtelijk&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 2&lt;/td&gt;
+            &lt;td&gt;Je kunt data netjes organiseren&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 3&lt;/td&gt;
+            &lt;td&gt;Het is gemakkelijk om data te vergelijken&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Reden 4&lt;/td&gt;
+            &lt;td&gt;Je kunt rijen en kolommen gebruiken om structuur aan te brengen&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </code>
+                </pre>
+
+                <div class="opdracht">
+                   <b>Opdracht 4:</b> Maak een tabel met daarin een lijst waarin je de lessen bij kunt houden. 
+                   Zorg dat je een lesnummer opneemt in een kolom. Er moet ook een kolom komen met datum. In de laatste kolom
+                   wat je hebt geleerd. Als je een eigen website maakt, gebruik dan in ieder geval een tabel met meerdere kolommen en rijen. 
+                </div>
+
+                <h3>Kleuren met CSS</h3>
+                <p>
+                    De website is nu best wel saai. Je hebt een witte achtergrond met zwarte letters. Om de website wat mooier te maken
+                    heb je CSS nodig. 
+                    <img src="voorbeeld2.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                    Hiervoor heb je een style-tag nodig. Deze kun je plaatsen tussen je head-tag zoals in bovenstaand voorbeeld.
+                </p>
+                <h3>Een mooie achtergrond</h3>
+                <p>
+                    Nu willen we een mooie achtergrond maken. Het eerste wat je moet doen is duidelijk aangeven in de style-tag welk element je 
+                    wilt stylen. In dit geval kiezen we de body-tag omdat de gehele website daarin staat. Vervolgens zet je tussen { } 
+                    de styling die je wilt doorvoeren. Als we de achtergrond willen veranderen, kunnen we daarvoor background-color gebruiken
+                    of voor een plaatje background-image. Sluit iedere regel af met een ;. Hieronder twee voorbeelden:
+                </p>
+                <img src="voorbeeld3.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                <div class="opdracht">
+                    <b>Opdracht 5:</b> Geef je website een mooie achtergrondkleur of afbeelding 
+                 </div>
+                 <h3>Geef je tekst een mooie kleur</h3>
+                 <p>
+                    Het is ook goed mogelijk om teksten een kleur te geven. Ook hiervoor kun je CSS gebruiken. Dit kun je doen door de tag te 
+                    benoemen die je een kleur wilt geven en vervolgens een regel met color: toe te voegen. Hieronder een voorbeeld waarbij 
+                    de h1-tag blauw wordt gemaakt en de h2-tag groen. 
+                 </p>
+                 <img src="voorbeeld4.png" width="500" alt="Voorbeeld waarin je CSS kunt gaan gebruiken"> <br />
+                 <div class="opdracht">
+                    <b>Opdracht 6:</b> Geef je titel een mooie tekstkleur. Zorg ook dat alle tekst in de p-tag een mooie kleur krijgt. 
+                 </div> <br />
+                 <div class="einde">
+                    Lever je HTML-bestand in bij les 2 in Digitvo. 
+                 </div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+            <div id="les3">
+                <h2>Les 3: Plaatjes, linkjes en divs</h2>
+                <h3>Plaatjes toevoegen</h3>
+                <p>
+                    Laten we de website wat mooier maken door een plaatje toe te voegen. Dit kan heel eenvoudig door de img-tag te gebruiken. 
+                    Zorg dat je het plaatje op dezelfde plek hebt staan als je .html-bestand. In de src="" zet je de naam van het plaatje + extensie (.jpg bijvoorbeeld) 
+                </p>
+                <div class="letop">De img-tag is een beetje vreemd want je hoeft hem niet af te sluiten. Er is dus geen einde voor de img-tag</div>
+                <code>&lt;img src=&quot;plaatje.jpg&quot;&gt;</code>
+                <div class="opdracht">
+                    Opdracht 7: Voeg nu zelf een plaatje toe aan je website. Zoek deze op via Google en plaats het in je HTML-pagina. 
+                </div>
+                <h3>Link toevoegen</h3>
+                <p>
+                    Het is ook mogelijk om een link naar een andere website te maken. Dit kan heel eenvoudig door het gebruik van een a-tag. 
+                    Hieronder een voorbeeld van een link + de code. In de href="" plaats je de link. En tussen de a-tag plaats je de tekst die
+                    je wilt geven aan de link. 
+                </p>
+                <a href="https://lodenstein.enverio.nl">Klik hier</a>
+                <code>
+                    &lt;a href=&quot;https://lodenstein.enverio.nl&quot;&gt;Klik hier&lt;/a&gt;
+                </code>
+                <div class="opdracht">
+                    Opdracht 8: Voeg een link toe aan jouw eigen website en zorg ervoor dat deze link werkt als je erop klikt. 
+                </div>
+                <h3>Een div</h3>
+                <p>
+                    Tot nu toe heb je alles onder elkaar gezet. Ik kan mij voorstellen dat het ook handig is om dingen naast
+                    elkaar te zetten. Daarvoor heb je weer CSS nodig. De techniek die je daarvoor kunt gebruiken is flexbox. 
+                    Het eerste wat je nodig hebt is het gebruik van een div. Een div is een tag die in principe niets doet tot 
+                    je er CSS aan toevoegt. Alleen moet je er dan wel voor zorgen dat CSS weet welke div aangepast dient te worden. Dit kan 
+                    door de div een naam te geven. Dit noemen we een id. Hieronder een voorbeeld van een div met een id. 
+                </p>
+                <code>&lt;div id=&quot;naamvandediv&quot;&gt;Wat tekst in de div&lt;/div&gt;</code>
+                <p>
+                    Nu zouden we de tekst in de div een aparte kleur kunnen geven. Omdat de div een id heeft, kunnen we in CSS heel makkelijk deze 
+                    div apart aanpassen. Dit kun je doen door een # te gebruiken en dan de naam van de div. 
+                </p>
+                <div class="letop">Let op: de id van een div moet uniek zijn. Je mag dus niet twee keer dezelfde id gebruiken. </div>
+                <img src="voorbeeld5.png" width="500" alt="Kleuren van een div">
+                <div style="color:green;">Wat tekst in de div</div>
+                <div class="opdracht">
+                    Opdracht 9: Maak in jouw website een div. Bedenk een goede naam voor deze div. En geef de div de kleur rood met CSS. 
+                    Beschrijf daarin wat je moeilijk vindt in het werken met CSS en HTML. Als je een eigen website maakt, zorg er dan in ieder
+                    geval voor dat je een div met een id hebt en een aparte kleur. 
+                </div>
+                <h3>Meerdere divs tegelijk stylen</h3>
+                <p>
+                    Het kan ook zijn dat je meerdere divs tegelijk wilt stylen. Bijvoorbeeld een kleur geven. In het vorige voorbeeld zag je 
+                    dat we een id gebruikten. Nadeel van een id is dat je deze maar 1 keer kunt gebruiken. Iedere div met een id moet een unieke
+                    naam hebben. Hiervoor hebben ze wat anders uitgevonden: een class. Door het class-attribuut te gebruiken in plaats van een 
+                    id kun je meerdere divs dezelfde naam geven en stylen met CSS. 
+                </p>
+                <img src="voorbeeld6.png" width="500" alt="De CSS om te stylen">
+                <code>
+                    <pre>
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div1&lt;/div&gt;
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div2&lt;/div&gt;
+&lt;div class=&quot;naamvaneendiv&quot;&gt;Div3&lt;/div&gt;
+                    </pre>
+                </code>
+                <div class="opdracht">
+                    Opdracht 10: Maak nu 3 divs in jouw website. Geef deze een class. En zorg dat deze blauw zijn. Maak vervolgens nog 2 divs.
+                    Geef deze ook een classnaam en een rode kleur. 
+                </div>
+               
+                <br />
+                <div class="einde">Einde les 3. Lever je resultaat in in digitvo.</div>
+            </div>
+            <div id="les4">
+                <h2>Les 4: flexbox</h2>
+                <h3>Meerdere divs maken</h3>
+                <p>
+                    Tot nu toe hebben we alles onder elkaar gezet. Het is ook goed mogelijk om zaken naast elkaar te zetten. Hiervoor heb je flexbox nodig. 
+                    Hiervoor heb je wel meerdere divs nodig. Zorg dat je deze eerst maakt. 
+                </p>
+                <pre>
+                    <code>
+&lt;div class=&quot;hoofddiv&quot;&gt; 
+    &lt;div&gt;Links&lt;/div&gt; 
+    &lt;div&gt;Midden&lt;/div&gt; 
+    &lt;div&gt;Rechts&lt;/div&gt; 
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <div class="opdracht">
+                    Opdracht 11: Zorg dat je de divs zoals hierboven ook in je code hebt staan. 
+                </div>
+                <p>
+                    Nu zul je zien dat de divs onder elkaar staan. Dit kunnen we oplossen met flexbox. Je kunt dit doen door de hoofddiv class in css 
+                    display: flex; te geven. 
+                </p>
+                <div class="opdracht">
+                    Opdracht 12: Zorg dat de hoofddiv de css regel display: flex; krijgt en check wat er gebeurt. 
+                </div>
+                <h3>Leuke trucjes met flexbox</h3>
+                <p>
+                    Super simpel dus eigenlijk. Maar met flexbox kun je nog veel meer. 
+                </p>
+                <div class="opdracht">
+                    Opdracht 13: zorg dat de hoofddiv flex-direction: row-reverse; krijgt. Wat gebeurt er?
+                    Voeg vervolgens flex-direction: column; eens toe. Wat gebeurt er nu? Laat dit zo in je code staan. 
+                    Je kunt dus heel makkelijk het gedrag van flexbox aanpassen. 
+                </div> <br />
+                <div class="einde">Einde les 4: lever deze aanpassingen in bij les 4 in Digitvo</div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color: #000d1b;
+    color:white;
+    font-size:10pt;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#wrapper {
+    border-radius: 5px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    padding: 5px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-top: 100px;
+}
+
+.opdracht {
+    background-color:purple;
+    padding: 0 5px 0 5px;
+}
+
+th {
+    text-align: left;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+td {
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+
+.einde {
+    background-color:red;
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+}
+
+.letop {
+    background-color:#09415f;
+    padding: 5px;
+}
+
+a {
+    color: white;
+}
+
+/* Styling for the <code> tag */
+code {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    color: #333;            /* Dark gray text color */
+    font-size: 1rem;        /* Same font size as pre */
+}
+
+/* Optional: Adding syntax highlighting for comments */
+code::before, code::after {
+    content: '';
+}
+
+/* Style the comments within the code */
+pre code:before {
+    content: ' ';  /* Empty space to keep formatting before code */
+}
+
+code {
+    display: block;
+}
+
+code {
+    color: #d14; /* Style your comments with a red tone */
+}
+
