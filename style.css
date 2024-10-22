@@ -70,11 +70,50 @@ pre code:before {
     content: ' ';  /* Empty space to keep formatting before code */
 }
 
-code {
+/* code {
     display: block;
-}
+} */
 
 code {
     color: #d14; /* Style your comments with a red tone */
 }
 
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease; /* Transitie toevoegen */
+    width:100px;
+    height: 50px;
+}
+
+.button:hover {
+    background-color: green; /* Verandert naar groen bij hover */
+}
+
+.div {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #ff7f50, #1e90ff);
+}
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

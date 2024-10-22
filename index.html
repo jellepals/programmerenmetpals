@@ -9,6 +9,8 @@
 
     <!-- Hier staat alle CSS in die ik gebruik om de website mooi te maken -->
     <link rel="stylesheet" href="style.css">
+
+    <title>Programmeren met Pals</title>
 </head>
 <body>
     <div id="wrapper">
@@ -22,8 +24,11 @@
             <ul>
                 <li><a href="#les1">Les 1: Hoe zet je een HTML-pagina op?</a></li>
                 <li><a href="#les2">Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</a></li>
-                <li><a href="#les3">Les 3: Plaatjes, linkjes</a></li>
+                <li><a href="#les3">Les 3: Plaatjes, linkjes en divs</a></li>
                 <li><a href="#les4">Les 4: Flexbox</a></li>
+                <li><a href="#les5">Les 5: Positionering en Layout</a></li>
+                <li><a href="#les6">Les 6: Geavanceerde CSS en animaties</a></li>
+                <li><a href="#eindproject">Eindproject: Jouw Eigen Portfolio Website</a></li>
             </ul>
 
             <div id="les1">
@@ -326,6 +331,7 @@
                 <br />
                 <div class="einde">Einde les 3. Lever je resultaat in in digitvo.</div>
             </div>
+            <a href="#les1">Terug naar boven</a>
             <div id="les4">
                 <h2>Les 4: flexbox</h2>
                 <h3>Meerdere divs maken</h3>
@@ -403,6 +409,269 @@
                 <div class="einde">Einde les 4: lever deze aanpassingen in bij les 4 in Digitvo</div>
             </div>
             <a href="#les1">Terug naar boven</a>
+            <div id="les5">
+                <h2>Les 5: Positionering en Layout</h2>
+                <h3>Wat is positionering in CSS?</h3>
+                <p>
+                    Positionering is een van de belangrijkste aspecten van webdesign. Het bepaalt hoe elementen zoals tekst, afbeeldingen en knoppen op een webpagina worden geplaatst. Door positionering te begrijpen en goed toe te passen, kun je ervoor zorgen dat je website er georganiseerd uitziet en prettig is voor gebruikers.
+                </p>
+                <p>
+                    CSS biedt verschillende manieren om elementen op een pagina te positioneren. We zullen de vijf belangrijkste methoden bespreken: statische positionering, relatieve positionering, absolute positionering, vaste positionering en Flexbox. Elke methode heeft zijn eigen toepassingen en beperkingen.
+                </p>
+            
+                <h3>Verschillende manieren van positioneren</h3>
+            
+                <h4>1. Statische positionering (Static Positioning)</h4>
+                <p>
+                    Dit is de standaardpositie voor elk HTML-element. Bij statische positionering worden elementen weergegeven in de volgorde waarin ze in de HTML zijn geschreven. Ze verschijnen dus simpelweg onder elkaar of naast elkaar zonder extra regels om ze te verschuiven.
+                </p>
+                <p>
+                    Je hoeft geen CSS-regel zoals <code>position: static;</code> toe te voegen, omdat dit automatisch de standaard is. Maar als je een element niet wilt verplaatsen en het op zijn "natuurlijke" plek wilt laten staan, dan is dit de juiste instelling.
+                </p>
+            
+                <h4>2. Relatieve positionering (Relative Positioning)</h4>
+                <p>
+                    Met relatieve positionering kun je een element verschuiven ten opzichte van zijn oorspronkelijke positie in de normale documentstroom. Het element blijft op zijn plek staan, maar je kunt het met CSS een klein beetje verplaatsen, bijvoorbeeld 20 pixels naar rechts of 10 pixels naar beneden.
+                </p>
+                <p>
+                    Dit doe je door waarden toe te voegen voor <code>top</code>, <code>right</code>, <code>bottom</code> of <code>left</code>. Relatieve positionering is handig wanneer je een element subtiel wilt verplaatsen zonder het uit de documentstroom te halen.
+                </p>
+                <pre><code>
+            div {
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }
+                </code></pre>
+                <p>
+                    In dit voorbeeld wordt het element 10 pixels naar beneden en 20 pixels naar rechts verschoven ten opzichte van waar het normaal zou staan.
+                </p>
+            
+                <h4>3. Absolute positionering (Absolute Positioning)</h4>
+                <p>
+                    Absolute positionering verplaatst een element volledig uit de normale documentstroom. Dit betekent dat het geen invloed meer heeft op andere elementen en zelf ook niet door andere elementen wordt beïnvloed. Het wordt gepositioneerd ten opzichte van het dichtstbijzijnde ouder-element dat ook een gepositioneerd element is (met <code>position: relative</code>, <code>absolute</code> of <code>fixed</code>).
+                </p>
+                <p>
+                    Als er geen ouder-element is met een gepositioneerde waarde, wordt het element gepositioneerd ten opzichte van de <code>&lt;html&gt;</code>-tag (het begin van de pagina).
+                </p>
+                <pre><code>
+            div {
+                position: absolute;
+                top: 50px;
+                left: 100px;
+            }
+                </code></pre>
+                <p>
+                    In dit voorbeeld wordt het element verplaatst naar een positie 50 pixels vanaf de bovenkant van de ouder-container en 100 pixels vanaf de linkerkant. Dit kan handig zijn voor dingen zoals pop-ups of menu's.
+                </p>
+            
+                <h4>4. Vaste positionering (Fixed Positioning)</h4>
+                <p>
+                    Met vaste positionering blijft een element op dezelfde plek op het scherm staan, zelfs als de gebruiker door de pagina scrollt. Dit wordt vaak gebruikt voor vaste navigatiebalken, banners of knoppen die altijd zichtbaar moeten blijven, ongeacht de positie van de gebruiker op de pagina.
+                </p>
+                <pre><code>
+            div {
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+                </code></pre>
+                <p>
+                    In dit voorbeeld blijft het element rechtsboven in het scherm staan, zelfs als je door de pagina scrolt. Het is handig voor bijvoorbeeld een 'Terug naar boven'-knop.
+                </p>
+            
+                <h4>5. Flexbox Layout</h4>
+                <p>
+                    Flexbox is een krachtige en flexibele layoutmethode die speciaal is ontworpen om complexe layouts eenvoudig te maken. Flexbox zorgt ervoor dat elementen zich automatisch aanpassen aan de beschikbare ruimte en kunnen worden uitgelijnd en verdeeld over de pagina op een manier die met traditionele positioneringstechnieken moeilijk te bereiken is.
+                </p>
+                <p>
+                    Flexbox werkt door de container een <code>display: flex;</code> waarde te geven, waarna de items binnen die container flexibel worden uitgelijnd.
+                </p>
+                <pre><code>
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+                </code></pre>
+                <p>
+                    In dit voorbeeld worden de items in de container gelijkmatig verdeeld met ruimte ertussen. Je kunt Flexbox gebruiken om eenvoudig kolommen, rijen en andere lay-outs te maken die zich aanpassen aan verschillende schermgroottes.
+                </p>
+            
+                <h3>Opdrachten</h3>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 14:</h4>
+                    <p>
+                        Gebruik <code>position: relative</code> om een afbeelding of tekst op je website te verplaatsen. Probeer een header iets naar beneden en rechts te verschuiven. Experimenteer met de waarden voor <code>top</code>, <code>left</code>, <code>right</code> en <code>bottom</code> en kijk wat er gebeurt.
+                    </p>
+                </div>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 15:</h4>
+                    <p>
+                        Maak een vaste navigatiebalk bovenaan je website die altijd zichtbaar blijft, zelfs als je naar beneden scrolt. Gebruik hiervoor <code>position: fixed</code> en zorg dat de balk breed genoeg is om de hele bovenkant van de pagina te vullen.
+                    </p>
+                </div>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 16:</h4>
+                    <p>
+                        Gebruik <code>position: absolute</code> om een element (zoals een logo of een afbeelding) vast te zetten op een bepaalde plek op je pagina. Plaats het element bijvoorbeeld in een hoek van je pagina.
+                    </p>
+                </div>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 17:</h4>
+                    <p>
+                        Maak een <code>div</code> die gebruikmaakt van <code>flexbox</code> en plaats daarin drie kolommen naast elkaar. Zorg ervoor dat de inhoud netjes verdeeld is over de kolommen en dat de kolommen dezelfde hoogte hebben.
+                    </p>
+                </div>
+                <div class="einde">Einde les 5. Lever je resultaat in in digitvo.</div>
+            </div>
+            <a href="#les1">Terug naar boven</a>
+            <div id="les6">
+                <h2>Les 6: CSS Animaties en Kleuren</h2>
+                <h3>Wat zijn CSS-animaties?</h3>
+                <p>
+                    CSS-animaties zorgen ervoor dat je elementen op je website dynamisch kunt laten bewegen of geleidelijk kunt veranderen van stijl. Dit kan bijvoorbeeld een knop zijn die van kleur verandert wanneer je eroverheen beweegt, of een afbeelding die langzaam inzoomt. Animaties geven je website een meer interactieve en levendige uitstraling.
+                </p>
+                <p>
+                    Met CSS kun je zowel eenvoudige animaties als complexe overgangen maken. CSS-transities zijn een manier om veranderingen van stijl vloeiend te laten verlopen, terwijl volledige animaties meer controle geven over de beweging van elementen.
+                </p>
+            
+                <h3>CSS Transities</h3>
+                <p>
+                    Transities zijn een eenvoudige manier om een vloeiend effect toe te voegen wanneer een element van stijl verandert. Bijvoorbeeld, als een knop normaal blauw is en je wilt dat deze groen wordt wanneer je er met de muis overheen beweegt, kun je een transitie toevoegen zodat de verandering soepel verloopt in plaats van abrupt.
+                </p>
+                <pre><code>
+            .button {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border: none;
+                transition: background-color 0.3s ease; /* Transitie toevoegen */
+            }
+            
+            .button:hover {
+                background-color: green; /* Verandert naar groen bij hover */
+            }
+                </code></pre>
+                <div class="button">Block</div>
+                <p>
+                    In dit voorbeeld verandert de knop van blauw naar groen wanneer de gebruiker er met de muis overheen beweegt, en de verandering duurt 0.3 seconden.
+                </p>
+            
+                <h3>Kleuren gebruiken in CSS</h3>
+                <p>
+                    Kleuren spelen een grote rol in het ontwerp van een website. Ze zorgen voor visuele aantrekkingskracht en kunnen de sfeer van een website bepalen. CSS biedt verschillende manieren om kleuren toe te voegen en aan te passen:
+                </p>
+                <ul>
+                    <li><b>Kleurcodes:</b> Je kunt kleuren instellen met hexadecimale codes (zoals <code>#ff0000</code> voor rood), RGB-waarden (zoals <code>rgb(255, 0, 0)</code>), of kleurnaam (zoals <code>red</code>).</li>
+                    <li><b>Overgangen:</b> Je kunt ook kleurovergangen (gradients) gebruiken, waarbij twee of meer kleuren geleidelijk in elkaar overlopen. Bijvoorbeeld: <code>background: linear-gradient(to right, red, yellow);</code>.</li>
+                </ul>
+            
+                <p>
+                    Hier is een voorbeeld van een element met een mooie kleurverloop als achtergrond:
+                </p>
+                <pre><code>
+            .div {
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(to right, #ff7f50, #1e90ff);
+            }
+                </code></pre>
+                <p>
+                    In dit voorbeeld loopt de achtergrondkleur van koraal (oranje) naar diepblauw, wat zorgt voor een aantrekkelijk visueel effect.
+                </p>
+                <div class="div"></div>
+
+
+                <h3>Extra: draaiende animatie</h3>
+                <p>
+                    CSS-animaties kunnen eenvoudig gebruikt worden om objecten op je website dynamisch te laten bewegen. 
+                    Een voorbeeld hiervan is een draaiende animatie, waarbij een element continu rond zijn eigen as draait.
+                    Hieronder zie je een blokje dat continu rondjes draait dankzij de <code>rotate()</code> eigenschap in CSS.
+                </p>
+
+                <div class="animation-box">Draaiend Blokje</div>
+
+                <p>
+                    Dit effect wordt bereikt door een CSS-keyframe animatie toe te voegen met de naam <code>spin</code>, 
+                    die de <code>transform: rotate()</code> eigenschap gebruikt om het blokje 360 graden te laten draaien.
+                    De animatie duurt 2 seconden en herhaalt zich oneindig. Hier is de code die gebruikt is:
+                </p>
+
+                <pre><code>
+                    .animation-box {
+                        width: 100px;
+                        height: 100px;
+                        background-color: lightblue;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                        animation: spin 2s infinite linear;
+                    }
+                    
+                    @keyframes spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                </code></pre>
+            
+                <h3>Opdrachten</h3>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 15:</h4>
+                    <p>
+                        Voeg een transitie toe aan een knop op jouw website. Laat de kleur van de div veranderen wanneer de gebruiker er met de muis overheen beweegt. Zorg ervoor dat de verandering soepel verloopt door gebruik te maken van de <code>transition</code>-eigenschap.
+                    </p>
+                </div>
+            
+                <div class="opdracht">
+                    <h4>Opdracht 16:</h4>
+                    <p>
+                        Voeg een kleurverloop toe aan de achtergrond van een <code>div</code> op je website. Experimenteer met verschillende kleuren en probeer een lineair of radiaal kleurverloop te maken met de <code>linear-gradient</code> of <code>radial-gradient</code> functie.
+                    </p>
+                </div>
+                <div class="opdracht">
+                    <h4>Extra: opdracht 17:</h4>
+                    <p>
+                       Voeg een draaiend element toe aan je website
+                    </p>
+                </div>
+                <div class="einde">Einde les 6. Lever je resultaat in in digitvo.</div>
+            </div>
+            <!-- <div id="eindproject">
+                <h2>Eindproject: Jouw Eigen Portfolio Website</h2>
+
+                <p><b>Projectdoel:</b></p>
+                <p>Je gaat een persoonlijke portfolio-website maken waarop je jezelf en je werk kunt presenteren. Dit is je kans om alles wat je hebt geleerd over HTML en CSS toe te passen en een website te maken die je eigen stijl en creativiteit laat zien!</p>
+
+                <h3>Wat moet erin zitten?</h3>
+                <ul>
+                    <li><b>Homepagina:</b> Een welkomstpagina met een korte introductie over jezelf en wat je doet. Gebruik hier mooie kopteksten en paragraven om je verhaal te vertellen. Voeg eventueel een leuke achtergrond toe.</li>
+                    <li><b>Hobby-pagina:</b> Een pagina waar je een aantal van je hobbies laat zien. Dit kan in de vorm van een galerij van plaatjes met bijbehorende beschrijvingen.</li>
+                    <li><b>CSS-styling:</b> Maak gebruik van kleuren, lettertypen en layouttechnieken (zoals Flexbox en Positionering) om je website er professioneel en mooi uit te laten zien. Voeg ook minstens één CSS-animatie toe om je site wat levendiger te maken.</li>
+                </ul>
+
+                <h3>Bonuspunten:</h3>
+                <ul>
+                    <li>Voeg creatieve CSS-animaties toe die je site dynamischer maken.</li>
+                    <li>Gebruik kleurovergangen voor achtergronden of knoppen om visuele effecten toe te voegen.</li>
+                    <li>Voeg een extra pagina toe, zoals een “Over mij”-pagina waar je meer over jezelf vertelt.</li>
+                </ul>
+
+                <h3>Leveringsinstructies:</h3>
+                <p>Maak je website volledig in HTML en CSS. Lever je eindproject in als een zip-bestand met alle HTML- en CSS-bestanden en eventuele afbeeldingen.</p>
+
+                <div class="einde">Einde Eindproject. Lever je resultaat in bij het eindproject in Digitvo.</div>
+            </div> -->
+            
         </div>
     </div>
 </body>
