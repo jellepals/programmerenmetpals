@@ -415,6 +415,66 @@
                 <p>
                     Positionering is een van de belangrijkste aspecten van webdesign. Het bepaalt hoe elementen zoals tekst, afbeeldingen en knoppen op een webpagina worden geplaatst. Door positionering te begrijpen en goed toe te passen, kun je ervoor zorgen dat je website er georganiseerd uitziet en prettig is voor gebruikers.
                 </p>
+
+                <h3>Verschillende soorten positionering in CSS</h3>
+                <p>
+                    CSS biedt verschillende methoden om elementen op een pagina te positioneren. Dit zijn de meest gebruikte positioneringsopties:
+                </p>
+            
+                <h4>1. Static</h4>
+                <p>
+                    Dit is de standaardwaarde van positionering. Een element met <code>position: static;</code> wordt gewoon weergegeven op de plek waar het normaal in de documentstroom zou staan. Dit betekent dat het element geen speciale positioneringsregels volgt.
+                </p>
+                <pre><code>
+                div {
+                    position: static;
+                }
+                </code></pre>
+            
+                <h4>2. Relative</h4>
+                <p>
+                    Een element met <code>position: relative;</code> wordt relatief gepositioneerd ten opzichte van zijn normale positie. Je kunt het verschuiven met behulp van de eigenschappen <code>top</code>, <code>right</code>, <code>bottom</code>, en <code>left</code>. Het behoudt echter zijn oorspronkelijke ruimte op de pagina.
+                </p>
+                <pre><code>
+                div {
+                    position: relative;
+                    top: 20px;  /* Het element wordt 20px naar beneden verplaatst */
+                    left: 10px;  /* Het element wordt 10px naar rechts verplaatst */
+                }
+                </code></pre>
+            
+                <h4>3. Absolute</h4>
+                <p>
+                    Een element met <code>position: absolute;</code> wordt gepositioneerd ten opzichte van het dichtstbijzijnde ouderelement dat niet <code>position: static;</code> heeft. Als er geen ouderelement is met een andere positionering, wordt het element ten opzichte van het document (de hele pagina) gepositioneerd.
+                </p>
+                <pre><code>
+                div {
+                    position: absolute;
+                    top: 50px;
+                    right: 30px;
+                }
+                </code></pre>
+                <p>
+                    In dit voorbeeld wordt het element 50 pixels vanaf de bovenkant van het ouderelement gepositioneerd en 30 pixels vanaf de rechterkant.
+                </p>
+            
+                <h4>4. Fixed</h4>
+                <p>
+                    Een element met <code>position: fixed;</code> wordt relatief gepositioneerd ten opzichte van het browservenster. Zelfs als de gebruiker naar beneden of omhoog scrollt, blijft het element op dezelfde plaats staan.
+                </p>
+                <pre><code>
+                div {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    width: 100px;
+                    height: 100px;
+                    background-color: yellow;
+                }
+                </code></pre>
+                <p>
+                    In dit voorbeeld blijft het element altijd in de rechterbenedenhoek van het venster.
+                </p>
             
                 <h3>Padding en Margin</h3>
                 <p>
@@ -448,6 +508,28 @@
                     background-color: lightgreen;
                 }
                 </code></pre>
+
+                <h3>Een element centreren met `margin: 0 auto;`</h3>
+                <p>
+                    Als je een element op je website horizontaal wilt centreren, zoals een blok of een container, kun je gebruik maken van de CSS-marge-eigenschap. Specifiek kun je de volgende regel gebruiken:
+                </p>
+                <pre><code>
+                div {
+                    width: 50%;  /* Zorg ervoor dat het element een breedte heeft */
+                    margin: 0 auto;  /* De marge boven/onder is 0 en links/rechts automatisch */
+                }
+                </code></pre>
+            
+                <p>
+                    Hier zorgt `margin: 0 auto;` ervoor dat het element automatisch wordt uitgelijnd in het midden van de pagina, zolang het een breedte heeft die kleiner is dan de volledige breedte van de pagina.
+                </p>
+            
+                <h4>Uitleg van de code:</h4>
+                <ul>
+                    <li><b>width: 50%;</b> Dit stelt de breedte van het element in op de helft van de breedte van de pagina.</li>
+                    <li><b>margin: 0 auto;</b> De eerste waarde (0) geeft geen ruimte boven en onder het element. De tweede waarde (auto) zorgt ervoor dat er automatisch gelijke marges aan de linker- en rechterkant van het element worden toegevoegd, wat het element in het midden van de pagina plaatst.</li>
+                </ul>
+            
             
                 <h3>Opdrachten</h3>
             
@@ -462,6 +544,25 @@
                     <h4>Opdracht 15:</h4>
                     <p>
                         Maak twee <code>div</code>-elementen onder elkaar en geef de bovenste <code>div</code> een margin van 30 pixels aan de bovenkant. Bekijk hoe de ruimte tussen de twee <code>div</code>-elementen groter wordt.
+                    </p>
+                </div>
+
+                <div class="opdracht">
+                    <h4>Opdracht 16:</h4>
+                    <p>
+                        Maak twee <code>div</code>-elementen op je website:
+                    </p>
+                    <ul>
+                        <li>Geef het eerste <code>div</code>-element de eigenschap <code>position: relative;</code> en verplaats het 50 pixels naar rechts en 30 pixels naar beneden.</li>
+                        <li>Maak vervolgens een tweede <code>div</code> binnen het eerste <code>div</code>-element en geef het de eigenschap <code>position: absolute;</code> met <code>top: 0;</code> en <code>left: 0;</code>.</li>
+                    </ul>
+                    <p><b>Vraag:</b> Waar wordt het tweede <code>div</code>-element geplaatst, en waarom?</p>
+                </div>
+
+                <div class="opdracht">
+                    <h4>Opdracht 17:</h4>
+                    <p>
+                        Maak een <code>div</code> op je website en stel de breedte in op 50%. Gebruik vervolgens <code>margin: 0 auto;</code> om deze <code>div</code> in het midden van de pagina te centreren. Voeg een achtergrondkleur toe zodat je goed kunt zien dat het element in het midden staat.
                     </p>
                 </div>
             </div>
@@ -564,20 +665,20 @@
                 <h3>Opdrachten</h3>
             
                 <div class="opdracht">
-                    <h4>Opdracht 15:</h4>
+                    <h4>Opdracht 18:</h4>
                     <p>
                         Voeg een transitie toe aan een knop op jouw website. Laat de kleur van de div veranderen wanneer de gebruiker er met de muis overheen beweegt. Zorg ervoor dat de verandering soepel verloopt door gebruik te maken van de <code>transition</code>-eigenschap.
                     </p>
                 </div>
             
                 <div class="opdracht">
-                    <h4>Opdracht 16:</h4>
+                    <h4>Opdracht 19:</h4>
                     <p>
                         Voeg een kleurverloop toe aan de achtergrond van een <code>div</code> op je website. Experimenteer met verschillende kleuren en probeer een lineair of radiaal kleurverloop te maken met de <code>linear-gradient</code> of <code>radial-gradient</code> functie.
                     </p>
                 </div>
                 <div class="opdracht">
-                    <h4>Extra: opdracht 17:</h4>
+                    <h4>Extra: opdracht 20:</h4>
                     <p>
                        Voeg een draaiend element toe aan je website
                     </p>
