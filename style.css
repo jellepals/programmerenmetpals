@@ -117,3 +117,94 @@ code {
         transform: rotate(360deg);
     }
 }
+
+/* Algemene stijlen voor de ontwerpprincipes */
+#ontwerp-principes {
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hiërarchie */
+#hierarchie h4.belangrijk {
+    font-size: 1.5em;
+    color: #007BFF; /* Accentkleur om het op te laten vallen */
+    font-weight: bold;
+}
+
+/* Witruimte */
+#witruimte {
+    margin-top: 40px; /* Extra ruimte rondom deze sectie */
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Simpel kleurgebruik */
+#kleurgebruik .voorbeeld-box {
+    background-color: #FFDDC1; /* Accentkleur voor visuele aantrekkelijkheid */
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Consistentie in knoppen en links */
+.knop {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.knop:hover {
+    background-color: #0056b3;
+}
+
+/* Logische navigatie */
+#navigatie nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navigatie nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#navigatie nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#navigatie nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Call to Action (CTA) */
+.cta-knop {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cta-knop:hover {
+    background-color: #218838;
+}
+
+/* Contrast */
+.contrast-voorbeeld {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
