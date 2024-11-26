@@ -74,40 +74,40 @@
                 </p>
                 <p>
                     <h4>1. Koptekst:</h4>
-                    <code>
-                        &lt;h1&gt;Dit is een grote koptekst&lt;/h1&gt;
-                    </code>
-                    <code>
-                        &lt;h2&gt;Dit is een kleinere koptekst&lt;/h2&gt;
-                    </code>
-                    <code>
-                        &lt;h3&gt;Dit is een nog kleinere koptekst&lt;/h3&gt;
-                    </code>
+<code>
+    &lt;h1&gt;Dit is een grote koptekst&lt;/h1&gt;
+</code>
+<code>
+    &lt;h2&gt;Dit is een kleinere koptekst&lt;/h2&gt;
+</code>
+<code>
+    &lt;h3&gt;Dit is een nog kleinere koptekst&lt;/h3&gt;
+</code>
                 </p>
                 <p>
                     <h4>2. Paragraaf:</h4>
-                    <code>
-                        &lt;p&gt;Hier plaats je grote stukken tekst&lt;/p&gt;
-                    </code>
+<code>
+    &lt;p&gt;Hier plaats je grote stukken tekst&lt;/p&gt;
+</code>
                 </p>
                 <p>
                     <h4>3. Bold, Schuin of Lijntje eronder:</h4>
                     <b>
-                        <code>
-                            &lt;b&gt;Deze tekst wordt dikgedrukt&lt;/b&gt;
-                        </code>
+<code>
+    &lt;b&gt;Deze tekst wordt dikgedrukt&lt;/b&gt;
+</code>
                     </b>
                     
                     <i>
-                        <code>
-                            &lt;i&gt;Deze tekst wordt schuin&lt;/i&gt;
-                        </code>
+<code>
+    &lt;i&gt;Deze tekst wordt schuin&lt;/i&gt;
+</code>
                     </i>
 
                     <u>
-                        <code>
-                            &lt;u&gt;Hier komt een lijntje onder&lt;/u&gt;
-                        </code>
+<code>
+    &lt;u&gt;Hier komt een lijntje onder&lt;/u&gt;
+</code>
                     </u>
                   
                 </p>
@@ -283,7 +283,7 @@
                 </p>
                 <a href="https://lodenstein.enverio.nl">Klik hier</a>
                 <code>
-                    &lt;a href=&quot;https://lodenstein.enverio.nl&quot;&gt;Klik hier&lt;/a&gt;
+&lt;a href=&quot;https://lodenstein.enverio.nl&quot;&gt;Klik hier&lt;/a&gt;
                 </code>
                 <div class="opdracht">
                     Opdracht 8: Voeg een link toe aan jouw eigen website en zorg ervoor dat deze link werkt als je erop klikt. 
@@ -357,7 +357,7 @@
                     display: flex; te geven. 
                 </p>
                 <code>
-                    display :flex;
+display :flex;
                 </code>
                 <div class="opdracht">
                     Opdracht 12: Zorg dat de hoofddiv de css regel display: flex; krijgt en check wat er gebeurt. 
@@ -367,8 +367,8 @@
                     Dit kun je makkelijk aanpassen via CSS. Daarvoor kun je de width CSS parameter gebruiken. Hieronder een voorbeeld. 
                 </p>
                 <code>
-                    width: 100%;
-                    background-color: green;
+width: 100%;
+background-color: green;
                 </code>
                 Voorbeeld div:
                 <div style="width: 100%; background-color: green;">Voorbeeld</div>
@@ -381,7 +381,7 @@
                     een oplossing. 
                 </p>
                 <code>
-                    justify-content: space-between;
+justify-content: space-between;
                 </code>
                 <p>
                     De justify-content bepaald hoe de divs worden verdeeld. Je kunt deze koppelen aan je hoofddiv. Je kunt ook andere
@@ -427,9 +427,9 @@
                     Dit is de standaardwaarde van positionering. Een element met <code>position: static;</code> wordt gewoon weergegeven op de plek waar het normaal in de documentstroom zou staan. Dit betekent dat het element geen speciale positioneringsregels volgt.
                 </p>
                 <pre><code>
-                div {
-                    position: static;
-                }
+div {
+    position: static;
+}
                 </code></pre>
             
                 <h4>2. Relative</h4>
@@ -437,11 +437,11 @@
                     Een element met <code>position: relative;</code> wordt relatief gepositioneerd ten opzichte van zijn normale positie. Je kunt het verschuiven met behulp van de eigenschappen <code>top</code>, <code>right</code>, <code>bottom</code>, en <code>left</code>. Het behoudt echter zijn oorspronkelijke ruimte op de pagina.
                 </p>
                 <pre><code>
-                div {
-                    position: relative;
-                    top: 20px;  /* Het element wordt 20px naar beneden verplaatst */
-                    left: 10px;  /* Het element wordt 10px naar rechts verplaatst */
-                }
+div {
+    position: relative;
+    top: 20px;  
+    left: 10px;  
+}
                 </code></pre>
             
                 <h4>3. Absolute</h4>
@@ -449,11 +449,11 @@
                     Een element met <code>position: absolute;</code> wordt gepositioneerd ten opzichte van het dichtstbijzijnde ouderelement dat niet <code>position: static;</code> heeft. Als er geen ouderelement is met een andere positionering, wordt het element ten opzichte van het document (de hele pagina) gepositioneerd.
                 </p>
                 <pre><code>
-                div {
-                    position: absolute;
-                    top: 50px;
-                    right: 30px;
-                }
+div {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
                 </code></pre>
                 <p>
                     In dit voorbeeld wordt het element 50 pixels vanaf de bovenkant van het ouderelement gepositioneerd en 30 pixels vanaf de rechterkant.
@@ -464,14 +464,14 @@
                     Een element met <code>position: fixed;</code> wordt relatief gepositioneerd ten opzichte van het browservenster. Zelfs als de gebruiker naar beneden of omhoog scrollt, blijft het element op dezelfde plaats staan.
                 </p>
                 <pre><code>
-                div {
-                    position: fixed;
-                    bottom: 0;
-                    right: 0;
-                    width: 100px;
-                    height: 100px;
-                    background-color: yellow;
-                }
+div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
                 </code></pre>
                 <p>
                     In dit voorbeeld blijft het element altijd in de rechterbenedenhoek van het venster.
@@ -490,10 +490,10 @@
                     Voorbeeld van padding in CSS:
                 </p>
                 <pre><code>
-                div {
-                    padding: 20px; /* Zorgt voor ruimte binnen het element */
-                    background-color: lightblue;
-                }
+div {
+    padding: 20px; /* Zorgt voor ruimte binnen het element */
+    background-color: lightblue;
+}
                 </code></pre>
             
                 <h4>2. Margin</h4>
@@ -504,10 +504,10 @@
                     Voorbeeld van margin in CSS:
                 </p>
                 <pre><code>
-                div {
-                    margin: 10px;  /* Zorgt voor ruimte buiten het element */
-                    background-color: lightgreen;
-                }
+div {
+    margin: 10px;  /* Zorgt voor ruimte buiten het element */
+    background-color: lightgreen;
+}
                 </code></pre>
 
                 <h3>Een element centreren met `margin: 0 auto;`</h3>
@@ -515,10 +515,10 @@
                     Als je een element op je website horizontaal wilt centreren, zoals een blok of een container, kun je gebruik maken van de CSS-marge-eigenschap. Specifiek kun je de volgende regel gebruiken:
                 </p>
                 <pre><code>
-                div {
-                    width: 50%;  /* Zorg ervoor dat het element een breedte heeft */
-                    margin: 0 auto;  /* De marge boven/onder is 0 en links/rechts automatisch */
-                }
+div {
+    width: 50%;  /* Zorg ervoor dat het element een breedte heeft */
+    margin: 0 auto;  /* De marge boven/onder is 0 en links/rechts automatisch */
+}
                 </code></pre>
             
                 <p>
@@ -584,17 +584,17 @@
                     Transities zijn een eenvoudige manier om een vloeiend effect toe te voegen wanneer een element van stijl verandert. Bijvoorbeeld, als een knop normaal blauw is en je wilt dat deze groen wordt wanneer je er met de muis overheen beweegt, kun je een transitie toevoegen zodat de verandering soepel verloopt in plaats van abrupt.
                 </p>
                 <pre><code>
-            .button {
-                background-color: blue;
-                color: white;
-                padding: 10px;
-                border: none;
-                transition: background-color 0.3s ease; /* Transitie toevoegen */
-            }
-            
-            .button:hover {
-                background-color: green; /* Verandert naar groen bij hover */
-            }
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease; /* Transitie toevoegen */
+}
+
+.button:hover {
+    background-color: green; /* Verandert naar groen bij hover */
+}
                 </code></pre>
                 <div class="button">Block</div>
                 <p>
@@ -614,11 +614,11 @@
                     Hier is een voorbeeld van een element met een mooie kleurverloop als achtergrond:
                 </p>
                 <pre><code>
-            .div {
-                width: 200px;
-                height: 200px;
-                background: linear-gradient(to right, #ff7f50, #1e90ff);
-            }
+.div {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #ff7f50, #1e90ff);
+}
                 </code></pre>
                 <p>
                     In dit voorbeeld loopt de achtergrondkleur van koraal (oranje) naar diepblauw, wat zorgt voor een aantrekkelijk visueel effect.
@@ -642,25 +642,25 @@
                 </p>
 
                 <pre><code>
-                    .animation-box {
-                        width: 100px;
-                        height: 100px;
-                        background-color: lightblue;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-weight: bold;
-                        animation: spin 2s infinite linear;
-                    }
-                    
-                    @keyframes spin {
-                        from {
-                            transform: rotate(0deg);
-                        }
-                        to {
-                            transform: rotate(360deg);
-                        }
-                    }
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
                 </code></pre>
             
                 <h3>Opdrachten</h3>
