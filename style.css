@@ -228,6 +228,7 @@ code {
     text-decoration: none;
     display: block;
     padding:5px;
+    font-weight: bold;
 }
 
 #menu li:hover {
