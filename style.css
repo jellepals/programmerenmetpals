@@ -39,7 +39,7 @@ td {
 
 
 .einde {
-    background-color:red;
+    background-color:#EF5B5B;
     padding: 0 5px 0 5px;
     font-weight: bold;
 }
@@ -214,21 +214,37 @@ code {
     padding: 0;
     display: flex;
     width:100%;
-    background-color: #333; 
+    background-color: #20A39E; 
     position: fixed;
 }
 
 #menu li {
     list-style-type: none;
-    padding: 10px;
     text-align: center;
     flex: 1;
 }
 
 #menu a {
     text-decoration: none;
+    display: block;
+    padding:5px;
 }
 
 #menu li:hover {
     background-color: #555;
+}
+
+.checklist {
+    margin-bottom: 20px;
+}
+.checklist ul {
+    list-style-type: none;
+    padding: 0;
+}
+.checklist li {
+    margin-bottom: 10px;
+}
+.checklist li::before {
+    content: "• "; /* Voegt een bullet point toe */
+    color: #555;
 }
