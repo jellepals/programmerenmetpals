@@ -13,24 +13,23 @@
     <title>Programmeren met Pals</title>
 </head>
 <body>
+    <!-- Hier staan wat linkjes waarmee je kunt scrollen naar de juiste plek op de website -->
+    <ul id="menu">
+        <li><a href="#les1">1: HTML?</a></li>
+        <li><a href="#les2">2: Tabel en kleur?</a></li>
+        <li><a href="#les3">3: Plaatjes, linkjes en divs</a></li>
+        <li><a href="#les4">4: Flexbox</a></li>
+        <li><a href="#les5">5: Positionering</a></li>
+        <li><a href="#les6">6: Animaties</a></li>
+        <li><a href="#ontwerp-principes">Ontwerp</a></li>
+        <li><a href="#eindproject">Eindproject</a></li>
+    </ul>
     <div id="wrapper">
         <div id="content">
             <!-- Hier staat de titel van de pagina en een korte introductie -->
             <h1>Programmeren met Pals</h1>
             <h2>Bouw je eigen website</h2>
             <p>Op deze website leer je programmeren met Pals. Aan het eind van deze lessenserie kun je zelf een gave website bouwen.</p>
-            
-            <!-- Hier staan wat linkjes waarmee je kunt scrollen naar de juiste plek op de website -->
-            <ul>
-                <li><a href="#les1">Les 1: Hoe zet je een HTML-pagina op?</a></li>
-                <li><a href="#les2">Les 2: Hoe kan ik een tabel maken en de website wat kleur geven?</a></li>
-                <li><a href="#les3">Les 3: Plaatjes, linkjes en divs</a></li>
-                <li><a href="#les4">Les 4: Flexbox</a></li>
-                <li><a href="#les5">Les 5: Positionering en Layout</a></li>
-                <li><a href="#les6">Les 6: Geavanceerde CSS en animaties</a></li>
-                <li><a href="#ontwerp-principes">Ontwerp principes</a></li>
-                <li><a href="#eindproject">Eindproject: Jouw Eigen Portfolio Website</a></li>
-            </ul>
 
             <div id="les1">
                 <h2>Les 1: Hoe zet je een HTML-pagina op?</h2>
@@ -708,7 +707,47 @@
                         Het menu bevindt zich meestal bovenaan de pagina of in een zijbalk. Hierin staan links naar belangrijke pagina's zoals "Home",
                         "Over ons" en "Contact". Het menu helpt gebruikers om eenvoudig door de website te navigeren.
                     </p>
-                
+
+                    Hieronder een voorbeeld van een eenvoudig menu met HTML:
+                    <pre>
+                        <code>
+&lt;ul id=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#over-ons&quot;&gt;Over Ons&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#diensten&quot;&gt;Diensten&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;                        
+                        </code>
+                    
+                    </pre>
+
+                    Hieronder wat CSS die je kunt gebruiken om het menu te stijlen: <br />
+                    <ul>
+                        <li>#menu = maakt de lijst horizontaal met flex en verwijderd de bolletjes. Verder wordt er een mooie achtergrondkleur gemaakt.</li>
+                        <li>#menu li a  = verwijder het standaard lijntje onder de link.</li>
+                        <li>#menu li a:hover = als je met je muis over het menu heen gaat dan krijgt deze een andere kleur</li>
+                    </ul>
+                    <pre>
+                        <code>
+#menu {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    background-color: #333; 
+}
+
+#menu li a {
+    text-decoration: none; 
+}
+
+#menu li a:hover {
+    background-color: #575757; 
+}
+                            
+
+                        </code>
+                    </pre>
                     <h4>2. Header</h4>
                     <p>
                         De header bevat meestal de **titel** van de website (vaak in een `h1`-tag) en kan ook een korte omschrijving of slogan bevatten.
@@ -834,7 +873,6 @@
                     waarmee je direct kunt zien waar de website over gaat.</li>
                     <li><b>Afbeeldingen pagina:</b> Een pagina waar je een aantal van je hobbys laat zien. Dit kan in de vorm van een galerij van plaatjes met bijbehorende beschrijvingen.</li>
                     <li><b>Pagina over jezelf:</b> Maak een pagina over jezelf en vertel waarom dit thema je zo aanspreekt.</li>
-                    <li><b>Contactpagina:</b> Maak een contact pagina waarin mensen meer informatie krijgen over hoe ze jou kunnen bereiken.</li>
                     <li><b>CSS-styling:</b> Maak gebruik van kleuren, lettertypen en layouttechnieken (zoals Flexbox en Positionering) om je website er professioneel en mooi uit te laten zien. Voeg ook minstens één CSS-animatie toe om je site wat levendiger te maken.</li>
                 </ul>
 
@@ -843,6 +881,7 @@
                     <li>Voeg creatieve CSS-animaties toe die je site dynamischer maken.</li>
                     <li>Gebruik kleurovergangen voor achtergronden of knoppen om visuele effecten toe te voegen.</li>
                     <li>Voeg een extra pagina toe met daarin een blog over jouw hobby</li>
+                    <li><b>Contactpagina:</b> Maak een contact pagina waarin mensen meer informatie krijgen over hoe ze jou kunnen bereiken.</li>
                 </ul>
 
                 <h3>Leveringsinstructies:</h3>
