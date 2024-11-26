@@ -58,6 +58,10 @@ code {
     font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
     color: #333;            /* Dark gray text color */
     font-size: 1rem;        /* Same font size as pre */
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
 }
 
 /* Optional: Adding syntax highlighting for comments */
